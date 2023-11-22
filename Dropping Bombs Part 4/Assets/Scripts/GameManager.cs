@@ -89,10 +89,14 @@ public class GameManager : MonoBehaviour
         spawner.active = false;
         gameStarted = false;
         Invoke("SplashScreen", 2f);
-        splash.SetActive(true);
-
-        
-
-        //score = scoreSystem.GetComponent<Score>().score;
     }
+
+
+void SplashScreen()
+{
+
+smokeCleared = true;
+splash.SetActive(true);
+}
+
 }
